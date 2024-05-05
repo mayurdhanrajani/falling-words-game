@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background_color">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvWordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/word"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/SIZE_24SP"
+        app:fontFamily="@font/font_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvWordValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/SIZE_48SP"
+        app:fontFamily="@font/font_demi_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScoreLabel"
+        app:layout_constraintVertical_bias="0.02"
+        tools:text="0/10" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/SIZE_24SP"
+        app:fontFamily="@font/font_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvScoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero_value"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/SIZE_48SP"
+        app:fontFamily="@font/font_demi_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScoreLabel"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <com.uzairiqbal.circulartimerview.CircularTimerView
+        android:id="@+id/tvTimeRemaining"
+        android:layout_width="@dimen/SIZE_150DP"
+        android:layout_height="@dimen/SIZE_150DP"
+        app:backgroundColor="@color/timer_background_color"
+        app:backgroundWidth="10"
+        app:fontFamily="@font/font_demi_bold"
+        app:isClockwise="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:progressBackgroundColor="@color/timer_progress_background_color"
+        app:progressColor="@color/timer_progress_color"
+        app:progressTextColor="@color/text_color"
+        app:startingPoint="top"
+        app:textSize="@dimen/SIZE_20SP" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSpanishWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/SIZE_24SP"
+        app:fontFamily="@font/font_regular"
+        app:layout_constraintBottom_toTopOf="@id/tvEnglishWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        tools:text="Hola" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIncorrect"
+        android:layout_width="@dimen/SIZE_60DP"
+        android:layout_height="@dimen/SIZE_60DP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/ic_incorrect" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvEnglishWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_view_rounded_corner"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/SIZE_24SP"
+        app:fontFamily="@font/font_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        tools:text="Hello" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCorrect"
+        android:layout_width="@dimen/SIZE_60DP"
+        android:layout_height="@dimen/SIZE_60DP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/ic_correct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

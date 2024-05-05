@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Falling Words</string>
+    <string name="play">Play</string>
+    <string name="word">Word</string>
+    <string name="score">Score</string>
+    <string name="zero_value">0</string>
+    <string name="word_count">%1$s/%2$s</string>
+    <string name="no_internet">No Internet!</string>
+    <string name="no_internet_detected_message">The internet connection was not detected. Please try again after sometime.</string>
+    <string name="ok">OK</string>
+    <string name="game_complete">Game Completed!</string>
+    <string name="game_complete_message">You answered %1$s words correctly. Click on OK to play it again.</string>
+</resources>

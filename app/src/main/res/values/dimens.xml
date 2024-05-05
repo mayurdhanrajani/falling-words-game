@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DP Size -->
+    <dimen name="SIZE_16DP">16dp</dimen>
+    <dimen name="SIZE_24DP">24dp</dimen>
+    <dimen name="SIZE_60DP">60dp</dimen>
+    <dimen name="SIZE_108DP">108dp</dimen>
+    <dimen name="SIZE_150DP">150dp</dimen>
+
+    <!-- SP Size -->
+    <dimen name="SIZE_20SP">20sp</dimen>
+    <dimen name="SIZE_24SP">24sp</dimen>
+    <dimen name="SIZE_48SP">48sp</dimen>
+    <dimen name="SIZE_80SP">80sp</dimen>
+</resources>
